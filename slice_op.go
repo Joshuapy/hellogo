@@ -7,8 +7,10 @@ import "fmt"
 func declare_slice() {
 	//1 var 声明
 	var slice1 []int
+	isnil := slice1 == nil
 	var slice2 = []int{1, 2}
-	fmt.Println("slice1:", slice1)
+	// slice1 = append(slice1, 1)
+	fmt.Printf("slice1:%v, isnil: %v\n", slice1, isnil)
 	fmt.Println("slice2:", slice2)
 	// slice3 := []int  错误
 	slice4 := []int{}
@@ -79,11 +81,24 @@ func slice_copy() {
 
 }
 
+// 遍历
+func range_slice() {
+	aslice := make([]int, 6)  // 初始零值
+	aslice[0] = 1
+	aslice = append(aslice, 11)
+	// aslice := []int{1, 1, 1, 2, 3}
+	// for i := range aslice {  // 注意这里的变量： 一个的时候是索引，两个的时候是索引+元素
+	for i, v := range aslice {
+		fmt.Printf("i: %v, v: %v\n", i, v)
+	}
+}
+
 func main() {
-	//declare_slice()
+	declare_slice()
 	//append_elem()
 	//slice_cap()
 	// slice_data()
 	// append_slice()
-	slice_copy()
+	// slice_copy()
+	range_slice()
 }
