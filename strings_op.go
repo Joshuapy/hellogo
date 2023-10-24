@@ -7,7 +7,6 @@ import "unicode/utf8"
 import "strings"
 
 
-
 func string_length() {
 	s2 := "世界"
 	fmt.Printf("byte length:%d\n", len(s2)) // 字节长度
@@ -36,8 +35,8 @@ func decode_utf8_rune(){
 }
 
 func main(){
-	//string_length()
-	//string_split()
-	//strings_splitN()
+	string_length()
+	string_split()
+	strings_splitN()
     decode_utf8_rune()
 }

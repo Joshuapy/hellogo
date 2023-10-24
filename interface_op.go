@@ -6,6 +6,7 @@ package main
 
 
 import "fmt"
+import "log"
 
 
 // 接口集

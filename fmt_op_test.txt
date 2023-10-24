@@ -1,0 +1,9 @@
+test for Fprint
+test for Fprintf
+test for Fprintln
+test for Fprint
+test for Fprintf
+test for Fprintln
+test for Fprint
+test for Fprintf
+test for Fprintln

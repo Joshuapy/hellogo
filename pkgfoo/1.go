@@ -3,4 +3,4 @@
 
 package foo
 
-var Foo string = "Variable Foo from package foo"
+var Foo string = printFoo()
